@@ -1,0 +1,30 @@
+@media screen and (max-width: 700px) {
+    h1{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+
+    h1 > p{
+        font-size: clamp(1rem, 50% + 7vw, 255rem);
+    }
+
+    #all > article > section.video > iframe{
+        height: 30%;
+        aspect-ratio: 21/9;
+    }
+
+    h1 > p::after{
+        overflow: hidden;
+    }
+
+    #all > article > section.info > h3{
+        font-size: clamp(2rem, 50% + 6vw, 4rem);
+    }
+}
+
+@media screen and (max-width: 450px){
+    #all > article > section.video > iframe{
+        margin-bottom: calc(50% + 1rem);
+    }
+}
