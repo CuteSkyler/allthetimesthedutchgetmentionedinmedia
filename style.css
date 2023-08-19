@@ -18,6 +18,20 @@ h1{
     padding: 2rem;
 }
 
+h2{
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+h2 > p{
+    max-width: calc(50ch + 6rem);
+    padding-inline: 6rem;
+    text-align: center;
+}
+
 h1 > p{
     font-family: 'Fjalla One', sans-serif;
     font-size: clamp(1rem, 50% + 3vw, 7rem);
