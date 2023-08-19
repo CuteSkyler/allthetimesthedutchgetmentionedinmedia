@@ -9,7 +9,8 @@
         font-size: clamp(1rem, 50% + 7vw, 255rem);
     }
 
-    #all > article > section.video > iframe{
+    #all > article > section.video > iframe,
+    #all > article > a > section.video > iframe{
         height: 30%;
         aspect-ratio: 21/9;
     }
@@ -18,7 +19,8 @@
         overflow: hidden;
     }
 
-    #all > article > section.info > h3{
+    #all > article > section.info > h3,
+    #all > article > a > section.info > h3{
         font-size: clamp(2rem, 50% + 6vw, 4rem);
     }
 
@@ -34,13 +36,15 @@
         padding-inline: 1rem;
     }
 
-    #all > article > section.info{
+    #all > article > section.info,
+    #all > article > a > section.info{
         padding: 2rem;
         font-size: 1rem;
         bottom: 2rem;
     }
 
-    #all > article > section.info:hover{
+    #all > article > section.info:hover,
+    #all > article > a > section.info:hover{
         bottom: 2.5rem;
     }
 
@@ -50,12 +54,18 @@
     }
 
     #all > article:nth-child(even):before{
-        top: 1rem;
+        top: 2rem;
     }
 }
 
 @media screen and (max-width: 450px){
-    #all > article > section.video > iframe{
+    #all > article > section.video > iframe,
+    #all > article > a > section.video > iframe{
         margin-bottom: calc(50% + 1rem);
+    }
+
+    footer > p{
+        text-align: center;
+        max-width: 80vw;
     }
 }
